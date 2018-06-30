@@ -1,7 +1,7 @@
 sudo_tshake = dofile("sudo.lua")
 https = require("ssl.https")
 JSON = dofile("./libs/JSON.lua")
-local tshake_dev = io.open("tshake_online.lua")
+local tshake_dev = io.open("Tshake2_online.lua")
 if tshake_dev then
   
 tshake_on = {string.match(tshake_dev:read('*all'), "^(.*)/(%d+)")}
@@ -11,7 +11,7 @@ tsheke_file:close()
 https.request("https://api.telegram.org/bot"..tshake_on[1].."/sendMessage?chat_id="..tshake_on[2].."&text=Bot_Tshake_is_start_new")
 os.execute('cd .. && rm -rf .telegram-cli')
 os.execute('rm -rf tshake_online.lua')  
-os.execute('./tg -s ./Tshake.lua $@ --bot='..tshake_on[1])
+os.execute('./tg -s ./Tshake2.lua $@ --bot='..tshake_on[1])
 end
 function chack(tokenCk)
 local getme = "https://api.telegram.org/bot" ..tokenCk.. '/getme'
@@ -26,7 +26,7 @@ tsheke_file:write("token = '" ..tokenCk.."'\n\nsudo_add = "..sudo_send.."" )
 tsheke_file:close()
 os.execute('cd .. && rm -fr .telegram-cli')
 os.execute('cd && rm -fr .telegram-cli')
-os.execute('./tg -s ./Tshake.lua $@ --bot='..tokenCk)
+os.execute('./tg -s ./Tshake2.lua $@ --bot='..tokenCk)
 else
 print("\27[31m»»This TOKEN Incorrect , Send Right TOKEN««\27[m")
 local token_send = io.read()
@@ -47,7 +47,7 @@ local getme = "https://api.telegram.org/bot" ..token.. '/getme'
 local req = https.request(getme)
 local data = JSON:decode(req)
 if data.ok == true then
-os.execute('./tg -s ./Tshake.lua $@ --bot='..token)
+os.execute('./tg -s ./Tshake2.lua $@ --bot='..token)
 else
 print("\27[31mTOKEN Incorrect , Send Right TOKEN««\27[m")
 local token_send = io.read()

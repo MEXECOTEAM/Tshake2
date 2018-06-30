@@ -4,7 +4,7 @@
   | | \___ \| |_| | / _ \ | ' /|  _|
   | |  ___) |  _  |/ ___ \| . \| |___
   |_| |____/|_| |_/_/   \_\_|\_\_____|
-              CH > @TshAkETEAM
+              CH > @MEXIC_TV
 --]]
 serpent = require('serpent')
 serp = require 'serpent'.block
@@ -4472,13 +4472,13 @@ end
     
   🌐┇<strong>TshAkE TEAM</strong>
     
-  🦁┇<a href="https://telegram.me/TshAkETEAM">قناه السورس</a>
-  📜┇<a href="https://telegram.me/TshAkE_DEV">قناه شروحات سورس</a>
-  📁┇<a href="https://telegram.me/TshAkEfiles">قناه ملفات السورس</a>
+  🦁┇<a href="https://telegram.me/MEXIC_TV">قناه السورس</a>
+  📜┇<a href="https://telegram.me/MEXIC_TV">قناه شروحات سورس</a>
+  📁┇<a href="https://telegram.me/MEXIC_TV">قناه ملفات السورس</a>
     
-  🔎┇<a href="https://t.me/TshAkE_DEV/227">طريقه التنصيب</a>
+  🔎┇<a href="https://t.me/MEXIC_TV/227">طريقه التنصيب</a>
     
-  📮┇<a href="t.me/TSHELPBOT">لـ تواصل </a> 
+  📮┇<a href="t.me/ZAHAYMR">لـ تواصل </a> 
   ]]
   send(msg.chat_id_, msg.id_, 1, text, 1, 'html')
   end
@@ -4727,5 +4727,5 @@ end
     | |/ __| '_ \  / _ \ | |/ /  _|
     | |\__ \ | | |/ ___ \|   <| |___
     |_||___/_| |_/_/   \_\_|\_\_____|
-              CH > @TshAkETEAM
+              CH > @MEXIC_TV
 --]]
